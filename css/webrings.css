@@ -1,0 +1,43 @@
+:root {
+/* background! */
+--w9p1h3-background-image: url("/images/retroringbg.jpg") !important;
+--w9p1h3-background-size:cover !important;
+--w9p1h3-background-color:black !important;
+--w9p1h3-background-size: cover !important;
+--w9p1h3-border:5px solid #003100 !important;
+--w9p1h3-border-radius:2px !important;
+
+/* sizing */
+--w9p1h3-width:200px !important;
+--w9p1h3-height:75px !important;
+--w9p1h3-padding:1rem !important;
+
+
+/* title! */
+--w9p1h3-title-font:'Axaxax' !important;
+--w9p1h3-title-color:#00f200 !important;
+--w9p1h3-title-size:30px !important;
+--w9p1h3-title-align:center !important;
+--w9p1h3-title-margin:5px !important;
+
+/* line height & letter spacing */
+--w9p1h3-title-height:25px !important;
+--w9p1h3-title-spacing:3px !important;
+--w9p1h3-title-weight:bold !important;
+
+
+/* text! */
+--w9p1h3-text-family:sans-serif !important;
+--w9p1h3-text-color:#00f200 !important;
+--w9p1h3-text-size:14px !important;
+--w9p1h3-text-align:center !important;
+--w9p1h3-text-spacing:1px !important;
+--w9p1h3-text-height:1em !important;
+
+/* links! */
+--w9p1h3-link-family:sans-serif !important;
+--w9p1h3-link-color:red !important;
+--w9p1h3-link-decoration:none !important;
+--w9p1h3-link-weight:bold !important;
+--w9p1h3-link-size:13px !important;
+}

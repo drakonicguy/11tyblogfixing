@@ -1,0 +1,9 @@
+<div id="navbox">
+  <ul id="navbar">
+  {% for item in navigation %}
+    <li class="barbox"><a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+      {{ item.name }}
+    </a></li>
+  {% endfor %}
+  </ul>
+</div>

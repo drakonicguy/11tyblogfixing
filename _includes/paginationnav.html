@@ -1,0 +1,17 @@
+<div class="pagination">
+  {% if pagination.previousPageHref %}
+    <a href="{{ pagination.previousPageHref }}" class="previous">
+      <<
+    </a>
+  {% else %}
+    <span class="previous"><<</span>
+  {% endif %}
+  <span class="page_number ">
+    {{ paginator.page }} / {{ paginator.total_pages }}
+  </span>
+  {% if pagination.nextPageHref %}
+    <a href="{{ pagination.nextPageHref }}" class="next">>></a>
+  {% else %}
+    <span class="next ">>></span>
+  {% endif %}
+</div>

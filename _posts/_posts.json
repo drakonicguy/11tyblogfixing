@@ -1,0 +1,4 @@
+{
+    "layout": "blog-main",
+    "permalink": "/blog/{{ page.date | date: '%d-%m-%Y' }}-{{ title | slug }}"
+}

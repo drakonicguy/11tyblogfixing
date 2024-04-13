@@ -1,0 +1,30 @@
+---
+layout: blog-main
+title: blog
+permalink: "/blog/"
+pagination:
+      data: collections.posts
+      size: 7
+      reverse: true
+---
+{% include 'blogsidebar.html' %}
+
+
+<div id="body">
+<h3> RECENT POSTS</h3>
+<hr>
+
+{% include 'paginationnav.html' %}
+
+{% for post in pagination.items %}
+      <div class="block">
+      <p>{{ post.date | date: '%d-%m-%Y'}}</p>
+      <h2><a href="{{ post.url | replace: "_posts", "blog" }}">{{ post.data.title }}</a></h2><hr>
+      <div class="tal excerpt"> {{ post.content | strip_html | truncatewords: 50 }}</div>
+      </div>
+{% endfor %}
+</div>
+
+</div>
+
+{% include 'paginationnav.html' %}

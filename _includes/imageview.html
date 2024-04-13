@@ -1,0 +1,12 @@
+<div id="imageview"><img id="viewedimage" src="" alt=""><button onclick="closeView()" id="closeview">X</button></div>
+<script>
+function viewImage(img) {
+      var image = document.getElementById('viewedimage')
+      var src = img.src
+      image.src = src
+      document.getElementById('imageview').style.display = 'block'
+    }
+    function closeView() {
+      document.getElementById('imageview').style.display = 'none'
+    }
+</script>

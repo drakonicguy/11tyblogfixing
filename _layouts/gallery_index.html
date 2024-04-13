@@ -1,0 +1,25 @@
+---
+permalink: "blog/gallery"
+---
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>welcome to gallery</h1>
+{% for gallery in page.galleries %}
+{% if gallery["name"] == 'Gallery' %}
+{% for image in gallery.images %}
+    <div class="gallery-image-wrapper">
+        <p>{{ image.name }}</p>
+        <a href="/images/gallery/{{ image.name }}"{% if site.gallery.lightbox %} rel="lightbox[{{ page.gallery }}]"{% endif %}>
+            <img class="gallery-image" src="/images/gallery/thumbs/{{ image.name }}" />
+        </a>
+    </div>
+{% endfor %}
+{% endif %}
+{% endfor %}
+</body>
+</html>

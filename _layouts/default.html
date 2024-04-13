@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DRAKONIC
+	{% if title != "index" %}
+	- {{ title }}
+	{% endif%}
+	</title>
+<link rel="icon" type="image/x-icon" href="/favicon.png">
+<meta property="og:title" content="DRAKONIC">
+<meta property="og:description" content="a place somewhere in cyberspace...">
+<style>body {background-color: black ;}</style>
+<link id="style" rel="stylesheet" href="/css/main.css">
+{% if title == "index" %}
+<link rel="stylesheet" href="/css/webrings.css">
+{% endif %}
+</head>
+<body>
+{% if title == "index" %}
+<div id="loading"><span style="font-family:Hack;">
+Welcome to</span><br>DRAKONIC. <br>Sit back and browse a while...
+</div>
+{% endif %}
+
+<div id="header" class="black container">
+    <a href="/"><div id="title">
+        <h1>DRAKONIC</h1></a>
+    </div>
+{% include 'navigation.html' %}
+</div>
+<div id="main" class="container darkgreen">
+{{ content }}
+</div>
+</body>
+</html>
+<script>
+// write a cookie-based theme switcher later
+</script>

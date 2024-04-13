@@ -1,0 +1,9 @@
+---
+title: Game logging sites
+tags: gaming
+categories: shorter
+---
+
+Thinking about game logging sites... I quite like the look of [Backloggery](https://www.backloggery.com), and their cool web widgets, but... It just sorta has a different focus than what I have when I play games, you know? Backloggery focuses more on achievements like clearing out your backlog, 100% completing games, and stuff like that. I prefer the fairly recently created "alternative", [Backloggd](https://backloggd.com), because it's more focused on journalling and just keeping track of what you have played regardless of ownership, and logging your personal thoughts about a game. 
+
+Only thing I think Backloggd needs to be perfect are import/export options. I love me a spreadsheet! (And I love me the option to export my data from an online service, in case it shuts down)

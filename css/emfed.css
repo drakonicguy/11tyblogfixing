@@ -1,0 +1,17 @@
+.toots {
+    list-style-type: none;
+    max-height:400px;
+}
+.toot {
+    display:block;
+  border: dashed 1px darkgrey;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: left;
+}
+.toots time {
+    display:block;
+}
+.toots .display-name {
+    display:none;
+}

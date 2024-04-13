@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content='{% if title != "blog" %}drakonic blog >> {{ title }}{% endif %}'>
+	<title>drakonic blog >> {{ title }}</title>
+<link rel="icon" type="image/x-icon" href="/favicon.png">
+<style>
+{% if title == "blog" %}
+img {
+    max-height: 200px;
+}
+{% else %}
+ul {
+	list-style-type: "=> ";
+}
+{% endif%}
+</style>
+<link rel="stylesheet" href="/css/blog.css">
+</head>
+<body>
+{% if title != "blog" %}
+<div class="tal"><a href="/blog/" onclick="history.back()"><h3>← go back</h3></a></div>
+<p>{{ page.date | date: '%d-%m-%Y'}}</p>
+<h1>{{title }}</h1>
+<div id="main">
+{% endif %}
+{{ content }}
+{% include 'imageview.html' %}
+{% if title != "blog" %}
+</div>
+<a href="/blog" onclick="history.back()"><h3>← go back</h3></a>
+{% endif %}
+</body>
+</html>
